@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Tutorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requirements
 
-## Available Scripts
+### Node
 
-In the project directory, you can run:
+run `node -v` to check if it is already or not
 
-### `npm start`
+### HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Used for structuring the components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### CSS
 
-### `npm test`
+Used for styling the components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### JavaScript
 
-### `npm run build`
+Used as the main programming language
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Create a new Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`npx create-react-app app-name`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Note
 
-### `npm run eject`
+The app name cannot be capital
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Tip
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Files like setupTests.js, reportWebVitals.js, app.test.js and logo.svg are useless for us, hence delete them and their usage in the code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run the app locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`npm start`
 
-## Learn More
+## Introduction
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Public folder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+contains the files accessible by the browser.
 
-### Code Splitting
+### Root DIV
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Everything gets rendered into a single div
 
-### Analyzing the Bundle Size
+### Index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The file that initializes our project.
 
-### Making a Progressive Web App
+### App.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+the main component of our React project.
 
-### Advanced Configuration
+### .gitignore
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contains names of files not to be pushed to the repository
 
-### Deployment
+### package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contains dependencies, scripts, etc.
 
-### `npm run build` fails to minify
+Note: You can run any script stated in this file through `npm run {name of script}`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### node_modules
+
+Contains the dependencies installed through npm stated in package.json
+
+Can be installed through `npm i` or `npm install`
+
+> Explanations of the syntaxes used are given through comments in the code itself.
