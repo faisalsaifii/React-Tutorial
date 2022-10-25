@@ -1,4 +1,4 @@
-const Navbar = () => {
+const EventHandling = () => {
   // A function called through something like onClick is passed with an event
   // e -> Event
   // Event is only passed automatically to the function first called
@@ -34,4 +34,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default EventHandling

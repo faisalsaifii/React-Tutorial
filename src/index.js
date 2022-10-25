@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/app/App';
+import App from './App';
 
 // Not using Web Vitals in this project
 // import reportWebVitals from './reportWebVitals';

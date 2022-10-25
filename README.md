@@ -68,4 +68,20 @@ Contains the dependencies installed through npm stated in package.json
 
 Can be installed through `npm i` or `npm install`
 
-> Explanations of the syntaxes used are given through comments in the code itself.
+### Changing the HEAD of HTML file
+
+#### Change the Favicon
+
+In the public folder, replace favicon.ico with a custom icon file of the same name,
+
+#### Change the title
+
+In public/index.html, change the text inside the title tags
+
+### Hooks
+
+- useState : Identified using use keyword
+
+    `const [var,setVar] = useState('initial value')`
+
+Explanations of the syntaxes used are given through comments in the code itself.
