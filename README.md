@@ -4,7 +4,11 @@
 
 ### Node
 
-run `node -v` to check if it is already or not
+Run to check if it is already or not
+
+```
+node -v
+```
 
 ### HTML
 
@@ -20,7 +24,9 @@ Used as the main programming language
 
 ## Create a new Project
 
-`npx create-react-app app-name`
+```
+npx create-react-app app-name
+```
 
 ### Note
 
@@ -32,7 +38,9 @@ Files like setupTests.js, reportWebVitals.js, app.test.js and logo.svg are usele
 
 ## Run the app locally
 
-`npm start`
+```
+npm start
+```
 
 ## Introduction
 
@@ -60,13 +68,27 @@ Contains names of files not to be pushed to the repository
 
 Contains dependencies, scripts, etc.
 
-Note: You can run any script stated in this file through `npm run {name of script}`
+Note: You can run any script stated in this file through
+
+```
+npm run {name of script}
+```
 
 ### node_modules
 
 Contains the dependencies installed through npm stated in package.json
 
-Can be installed through `npm i` or `npm install`
+Can be installed through
+
+ ```
+npm i
+```
+
+or
+
+```
+npm install
+```
 
 ### Changing the HEAD of HTML file
 
@@ -80,8 +102,53 @@ In public/index.html, change the text inside the title tags
 
 ### Hooks
 
-- useState : Identified using use keyword
+Identified using use keyword
 
-    `const [var,setVar] = useState('initial value')`
+- useState
+
+    ```js
+    const [var,setVar] = useState('initial value')
+    ```
+
+- useEffect
+
+    ```js
+    useEffect(() => {
+        console.log("Component Rendered")
+    },[])
+    ```
+
+### JSON Database
+
+
+```
+npx json-server --watch {location of json file} 
+```
+
+Specifying port number (Recommended if there is already a server running on the default port 3000)
+
+```
+npx json-server --watch {location of json file} --port {port number}
+```
+- JSON Server watches this file and wraps it in API Endpoints
+- Stores data
+- No Comments allowed
+- Everything present in the file is considered as data
+- The top level element is the resource on which we perform the operations such as addition, deletion, etc.
+
+**JSON Endpoints**
+
+- GET
+
+  - Fetch all blogs : `/blogs`
+  - Fetch a single blog : `/blogs/{id}`
+
+- POST
+
+  - Add a new blog : `/blogs`
+
+- DELETE
+
+  - Delete a blog : `/blogs/{id}`
 
 Explanations of the syntaxes used are given through comments in the code itself.

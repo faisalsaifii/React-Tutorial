@@ -3,7 +3,8 @@
 // import UseStateHook from './components/Hooks/useState/UseStateHook';
 // import Navbar from './components/events/EventHandling';
 import './App.css';
-import UseEffectHook from './components/Hooks/useEffect/UseEffectHook';
+import DataBaseEndpoint from './components/DB Endpoints/DbEndpoints';
+// import UseEffectHook from './components/Hooks/useEffect/UseEffectHook';
 
 // App is a react component that returns JSX
 // JSX looks like HTML but isn't
@@ -25,7 +26,16 @@ function App() {
       {/* <Navbar/> */}
       {/* <Home/> */}
       {/* <UseStateHook/> */}
-      <UseEffectHook/>
+      {/* <UseEffectHook/> */}
+      {
+        // REACT ROUTERS
+        // For NON React Pages
+        // The user makes a request and the server returns an HTML page
+        // Not in React coz it is a SPA (Single Page Application)
+        // Here the DOM takes over
+        // Instead of multiple requests to the server, React makes the DOM render components based on the routers 
+      }
+      <DataBaseEndpoint/>
     </div>
   );
 }

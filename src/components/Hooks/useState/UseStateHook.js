@@ -3,6 +3,9 @@ import List from './List'
 
 function UseStateHook() {
   // use State Hook
+  // Never initialize a state as null or leave it empty
+  // Always initialize a value
+  // It can even be an empty list
   // Allows the re-rednering of an element in JSX whenever it's state is changed
   const [name, setName] = useState('Initial')
   // Destructuring of the hook
