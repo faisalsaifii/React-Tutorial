@@ -130,6 +130,7 @@ Specifying port number (Recommended if there is already a server running on the 
 ```
 npx json-server --watch {location of json file} --port {port number}
 ```
+
 - JSON Server watches this file and wraps it in API Endpoints
 - Stores data
 - No Comments allowed
@@ -150,5 +151,12 @@ npx json-server --watch {location of json file} --port {port number}
 - DELETE
 
   - Delete a blog : `/blogs/{id}`
+
+### React Router v5
+
+**Installation Command**
+```
+npm i react-router-dom@5
+```
 
 Explanations of the syntaxes used are given through comments in the code itself.

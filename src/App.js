@@ -1,10 +1,12 @@
 // React doesn't need to be imported into every react component in v17
-// import Home from './components/home/Home';
-// import UseStateHook from './components/Hooks/useState/UseStateHook';
-// import Navbar from './components/events/EventHandling';
+import Home from './components/home/Home';
+import UseStateHook from './components/Hooks/useState/UseStateHook';
+import EventHandling from './components/events/EventHandling';
 import './App.css';
 import DataBaseEndpoint from './components/DB Endpoints/DbEndpoints';
-// import UseEffectHook from './components/Hooks/useEffect/UseEffectHook';
+import UseEffectHook from './components/Hooks/useEffect/UseEffectHook';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavBar from './components/nav/NavBar';
 
 // App is a react component that returns JSX
 // JSX looks like HTML but isn't
@@ -22,11 +24,7 @@ function App() {
       {
         // Multi Line Comment
       }
-      {/* Components : Uncomment whichever component you want to see */}
-      {/* <Navbar/> */}
-      {/* <Home/> */}
-      {/* <UseStateHook/> */}
-      {/* <UseEffectHook/> */}
+      {/* <DataBaseEndpoint/> */}
       {
         // REACT ROUTERS
         // For NON React Pages
@@ -35,7 +33,42 @@ function App() {
         // Here the DOM takes over
         // Instead of multiple requests to the server, React makes the DOM render components based on the routers 
       }
-      <DataBaseEndpoint/>
+      <Router>
+        {
+          // This is outside the switch hence
+          // Anything here will always be rendered
+        }
+        <NavBar/>
+        <Switch>
+          {
+            // The Switch component makes sure that there is only one route being displayed
+            // The Program looks for routes inside the switch and renders the one which is matched by the URL
+            // Without the switch all the routes will get displayed
+          }
+          {
+            // Routes are rendered from top to bottom
+            // React matches the URL with the given path and if some part of it matches
+            // It will render that router
+            // Example, Without exact attribute "/class" matches "/"
+            // Hence exact asks React to match the routes exactly
+          }
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/usestatehook">
+            <UseStateHook/>
+          </Route>
+          <Route path="/useeffecthook">
+            <UseEffectHook/>
+          </Route>
+          <Route path="/database">
+            <DataBaseEndpoint/>
+          </Route>
+          <Route path="/eventhandling">
+            <EventHandling/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
